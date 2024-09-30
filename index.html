@@ -1,0 +1,136 @@
+# -*- coding: utf-8 -*-
+"""
+
+@author: pelb
+"""
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hearing Loss Compensation Audio Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    audio {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .system-description {
+      font-style: italic;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hearing Loss Compensation Audio Examples</h1>
+
+  <h2>Paper Systems</h2>
+
+  <h3>SNR9</h3>
+
+  <!-- Unprocessed -->
+  <h4>Unprocessed</h4>
+  <audio controls>
+    <source src="sounds_examples/paper/SNR9_Unprocessed.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    This is the original noisy audio at an SNR of 9 dB without any processing.
+  </p>
+
+  <!-- HLC_half -->
+  <h4>HLC_half</h4>
+  <audio controls>
+    <source src="sounds_examples/paper/SNR9_HLC_half.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed using the Half-Gain Hearing Loss Compensation (HLC_half) system, applying half the prescribed gain based on the audiogram.
+  </p>
+
+  <!-- HLC_full -->
+  <h4>HLC_full</h4>
+  <audio controls>
+    <source src="sounds_examples/paper/SNR9_HLC_full.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed using the Full-Gain Hearing Loss Compensation (HLC_full) system, applying the full prescribed gain.
+  </p>
+
+  <!-- NR_NAL_R -->
+  <h4>NR_NAL_R</h4>
+  <audio controls>
+    <source src="sounds_examples/paper/SNR9_NR_NAL_R.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed first with a Noise Reduction algorithm and then with the NAL-R filter.
+  </p>
+
+  <!-- HLC-NR -->
+  <h4>HLC-NR</h4>
+  <audio controls>
+    <source src="sounds_examples/paper/SNR9_HLC-NR.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed with the HLC_half system combined with Noise Reduction.
+  </p>
+
+  <!-- DNN-HA -->
+  <h4>DNN-HA</h4>
+  <audio controls>
+    <source src="sounds_examples/paper/SNR9_DNN-HA.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed using the Deep Neural Network Hearing Aid (DNN-HA) system.
+  </p>
+
+  <h2>Ablation Group Systems</h2>
+
+  <h3>SNR9</h3>
+
+  <!-- HLC_ic_half -->
+  <h4>HLC_ic_half</h4>
+  <audio controls>
+    <source src="sounds_examples/ablation/SNR9_HLC_ic_half.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Ablation study variant using HLC with incomplete compensation (half-gain).
+  </p>
+
+  <!-- HLC_ic_full -->
+  <h4>HLC_ic_full</h4>
+  <audio controls>
+    <source src="sounds_examples/ablation/SNR9_HLC_ic_full.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Ablation study variant using HLC with incomplete compensation (full-gain).
+  </p>
+
+  <!-- NR_IC -->
+  <h4>NR_IC</h4>
+  <audio controls>
+    <source src="sounds_examples/ablation/SNR9_NR_IC.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Ablation study variant using Noise Reduction for the Incomplete Compensation model.
+  </p>
+
+  <!-- Repeat similar sections if you have other SNR levels like SNR0, SNR3 -->
+
+</body>
+</html>

@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-
-@author: pelb
-"""
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,103 +28,295 @@
 
   <h2>Paper Systems</h2>
 
-  <h3>SNR9</h3>
+  <!-- SNR0 -->
+  <h3>SNR0</h3>
 
   <!-- Unprocessed -->
   <h4>Unprocessed</h4>
   <audio controls>
-    <source src="sounds_examples/paper/SNR9_Unprocessed.wav" type="audio/wav">
+    <source src="paper/SNR0_Unprocessed.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
   <p class="system-description">
-    This is the original noisy audio at an SNR of 9 dB without any processing.
+    This is the unprocessed audio at an SNR of 0 dB.
   </p>
 
-  <!-- HLC_half -->
-  <h4>HLC_half</h4>
+  <!-- Audiogram divided by 2 -->
+  <h4>Audiogram Divided by 2</h4>
   <audio controls>
-    <source src="sounds_examples/paper/SNR9_HLC_half.wav" type="audio/wav">
+    <source src="paper/SNR0_HLC_half.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
   <p class="system-description">
-    Processed using the Half-Gain Hearing Loss Compensation (HLC_half) system, applying half the prescribed gain based on the audiogram.
+    This system is derived from the audiogram divided by 2 in the log domain of the auditory model, applied at an SNR of 0 dB.
   </p>
 
-  <!-- HLC_full -->
-  <h4>HLC_full</h4>
+  <!-- Full-Gain System -->
+  <h4>Full-Gain System</h4>
   <audio controls>
-    <source src="sounds_examples/paper/SNR9_HLC_full.wav" type="audio/wav">
+    <source src="paper/SNR0_HLC_full.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
   <p class="system-description">
-    Processed using the Full-Gain Hearing Loss Compensation (HLC_full) system, applying the full prescribed gain.
+    This system uses the full audiogram without division in the log domain, applied at an SNR of 0 dB.
   </p>
 
   <!-- NR_NAL_R -->
   <h4>NR_NAL_R</h4>
   <audio controls>
-    <source src="sounds_examples/paper/SNR9_NR_NAL_R.wav" type="audio/wav">
+    <source src="paper/SNR0_NR_NAL_R.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
   <p class="system-description">
-    Processed first with a Noise Reduction algorithm and then with the NAL-R filter.
+    Processed with Noise Reduction and NAL-R filtering at an SNR of 0 dB.
   </p>
 
   <!-- HLC-NR -->
   <h4>HLC-NR</h4>
   <audio controls>
-    <source src="sounds_examples/paper/SNR9_HLC-NR.wav" type="audio/wav">
+    <source src="paper/SNR0_HLC-NR.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
   <p class="system-description">
-    Processed with the HLC_half system combined with Noise Reduction.
+    Processed using the audiogram divided by 2 in the log domain with Noise Reduction at an SNR of 0 dB.
   </p>
 
   <!-- DNN-HA -->
   <h4>DNN-HA</h4>
   <audio controls>
-    <source src="sounds_examples/paper/SNR9_DNN-HA.wav" type="audio/wav">
+    <source src="paper/SNR0_DNN-HA.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
   <p class="system-description">
-    Processed using the Deep Neural Network Hearing Aid (DNN-HA) system.
+    Processed using the Deep Neural Network Hearing Aid (DNN-HA) system at an SNR of 0 dB. More details available at <a href="https://github.com/fotisdr/DNN-HA">https://github.com/fotisdr/DNN-HA</a>.
+  </p>
+
+  <!-- SNR3 -->
+  <h3>SNR3</h3>
+
+  <!-- Unprocessed -->
+  <h4>Unprocessed</h4>
+  <audio controls>
+    <source src="paper/SNR3_Unprocessed.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    This is the unprocessed audio at an SNR of 3 dB.
+  </p>
+
+  <!-- Audiogram divided by 2 -->
+  <h4>Audiogram Divided by 2</h4>
+  <audio controls>
+    <source src="paper/SNR3_HLC_half.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    This system is derived from the audiogram divided by 2 in the log domain of the auditory model, applied at an SNR of 3 dB.
+  </p>
+
+  <!-- Full-Gain System -->
+  <h4>Full-Gain System</h4>
+  <audio controls>
+    <source src="paper/SNR3_HLC_full.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    This system uses the full audiogram without division in the log domain, applied at an SNR of 3 dB.
+  </p>
+
+  <!-- NR_NAL_R -->
+  <h4>NR_NAL_R</h4>
+  <audio controls>
+    <source src="paper/SNR3_NR_NAL_R.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed with Noise Reduction and NAL-R filtering at an SNR of 3 dB.
+  </p>
+
+  <!-- HLC-NR -->
+  <h4>HLC-NR</h4>
+  <audio controls>
+    <source src="paper/SNR3_HLC-NR.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed using the audiogram divided by 2 in the log domain with Noise Reduction at an SNR of 3 dB.
+  </p>
+
+  <!-- DNN-HA -->
+  <h4>DNN-HA</h4>
+  <audio controls>
+    <source src="paper/SNR3_DNN-HA.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed using the Deep Neural Network Hearing Aid (DNN-HA) system at an SNR of 3 dB. More details available at <a href="https://github.com/fotisdr/DNN-HA">https://github.com/fotisdr/DNN-HA</a>.
+  </p>
+
+  <!-- SNR9 -->
+  <h3>SNR9</h3>
+
+  <!-- Unprocessed -->
+  <h4>Unprocessed</h4>
+  <audio controls>
+    <source src="paper/SNR9_Unprocessed.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    This is the unprocessed audio at an SNR of 9 dB.
+  </p>
+
+  <!-- Audiogram divided by 2 -->
+  <h4>Audiogram Divided by 2</h4>
+  <audio controls>
+    <source src="paper/SNR9_HLC_half.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    This system is derived from the audiogram divided by 2 in the log domain of the auditory model, applied at an SNR of 9 dB.
+  </p>
+
+  <!-- Full-Gain System -->
+  <h4>Full-Gain System</h4>
+  <audio controls>
+    <source src="paper/SNR9_HLC_full.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    This system uses the full audiogram without division in the log domain, applied at an SNR of 9 dB.
+  </p>
+
+  <!-- NR_NAL_R -->
+  <h4>NR_NAL_R</h4>
+  <audio controls>
+    <source src="paper/SNR9_NR_NAL_R.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed with Noise Reduction and NAL-R filtering at an SNR of 9 dB.
+  </p>
+
+  <!-- HLC-NR -->
+  <h4>HLC-NR</h4>
+  <audio controls>
+    <source src="paper/SNR9_HLC-NR.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed using the audiogram divided by 2 in the log domain with Noise Reduction at an SNR of 9 dB.
+  </p>
+
+  <!-- DNN-HA -->
+  <h4>DNN-HA</h4>
+  <audio controls>
+    <source src="paper/SNR9_DNN-HA.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed using the Deep Neural Network Hearing Aid (DNN-HA) system at an SNR of 9 dB. More details available at <a href="https://github.com/fotisdr/DNN-HA">https://github.com/fotisdr/DNN-HA</a>.
   </p>
 
   <h2>Ablation Group Systems</h2>
 
-  <h3>SNR9</h3>
+  <!-- SNR0 -->
+  <h3>SNR0</h3>
 
-  <!-- HLC_ic_half -->
-  <h4>HLC_ic_half</h4>
+  <!-- Audiogram divided by 2 (IC) -->
+  <h4>Audiogram Divided by 2 (IC)</h4>
   <audio controls>
-    <source src="sounds_examples/ablation/SNR9_HLC_ic_half.wav" type="audio/wav">
+    <source src="ablation/SNR0_HLC_ic_half.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
   <p class="system-description">
-    Ablation study variant using HLC with incomplete compensation (half-gain).
+    This system is derived from the audiogram divided by 2 in the log domain of the auditory model, appended with Inferior Colliculus (IC) at an SNR of 0 dB.
   </p>
 
-  <!-- HLC_ic_full -->
-  <h4>HLC_ic_full</h4>
+  <!-- Full-Gain System (IC) -->
+  <h4>Full-Gain System (IC)</h4>
   <audio controls>
-    <source src="sounds_examples/ablation/SNR9_HLC_ic_full.wav" type="audio/wav">
+    <source src="ablation/SNR0_HLC_ic_full.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
   <p class="system-description">
-    Ablation study variant using HLC with incomplete compensation (full-gain).
+    This system uses the full audiogram without division in the log domain, appended with Inferior Colliculus (IC) at an SNR of 0 dB.
   </p>
 
   <!-- NR_IC -->
   <h4>NR_IC</h4>
   <audio controls>
-    <source src="sounds_examples/ablation/SNR9_NR_IC.wav" type="audio/wav">
+    <source src="ablation/SNR0_NR_IC.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
   <p class="system-description">
-    Ablation study variant using Noise Reduction for the Incomplete Compensation model.
+    Processed with Noise Reduction appended with Inferior Colliculus (NR_IC) at an SNR of 0 dB.
   </p>
 
-  <!-- Repeat similar sections if you have other SNR levels like SNR0, SNR3 -->
+  <!-- SNR3 -->
+  <h3>SNR3</h3>
+
+  <!-- Audiogram divided by 2 (IC) -->
+  <h4>Audiogram Divided by 2 (IC)</h4>
+  <audio controls>
+    <source src="ablation/SNR3_HLC_ic_half.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    This system is derived from the audiogram divided by 2 in the log domain of the auditory model, appended with Inferior Colliculus (IC) at an SNR of 3 dB.
+  </p>
+
+  <!-- Full-Gain System (IC) -->
+  <h4>Full-Gain System (IC)</h4>
+  <audio controls>
+    <source src="ablation/SNR3_HLC_ic_full.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    This system uses the full audiogram without division in the log domain, appended with Inferior Colliculus (IC) at an SNR of 3 dB.
+  </p>
+
+  <!-- NR_IC -->
+  <h4>NR_IC</h4>
+  <audio controls>
+    <source src="ablation/SNR3_NR_IC.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed with Noise Reduction appended with Inferior Colliculus (NR_IC) at an SNR of 3 dB.
+  </p>
+
+  <!-- SNR9 -->
+  <h3>SNR9</h3>
+
+  <!-- Audiogram divided by 2 (IC) -->
+  <h4>Audiogram Divided by 2 (IC)</h4>
+  <audio controls>
+    <source src="ablation/SNR9_HLC_ic_half.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    This system is derived from the audiogram divided by 2 in the log domain of the auditory model, appended with Inferior Colliculus (IC) at an SNR of 9 dB.
+  </p>
+
+  <!-- Full-Gain System (IC) -->
+  <h4>Full-Gain System (IC)</h4>
+  <audio controls>
+    <source src="ablation/SNR9_HLC_ic_full.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    This system uses the full audiogram without division in the log domain, appended with Inferior Colliculus (IC) at an SNR of 9 dB.
+  </p>
+
+  <!-- NR_IC -->
+  <h4>NR_IC</h4>
+  <audio controls>
+    <source src="ablation/SNR9_NR_IC.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="system-description">
+    Processed with Noise Reduction appended with Inferior Colliculus (NR_IC) at an SNR of 9 dB.
+  </p>
 
 </body>
 </html>

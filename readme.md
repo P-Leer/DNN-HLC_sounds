@@ -2,7 +2,7 @@ This repository contains audio examples of different hearing-loss compensation s
 
 ## Audio files
 
-The sentences are sentences from the Danish HINT sentence, that we used to evaluate our proposed algorithms on, using a cohort of hearing-impaired listeners .
+The sentences are sentences from the Danish HINT, that we used to evaluate our proposed algorithms on, using a cohort of hearing-impaired listeners .
 
 [**Listen to the audio examples here**](https://p-leer.github.io/DNN-HLC_sounds/)
 

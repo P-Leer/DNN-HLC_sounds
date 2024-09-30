@@ -48,14 +48,14 @@
 
   <ul>
     <li><strong>Unprocessed </strong>: The original noisy audio without any processing.</li>
-    <li><strong>HLC (audiogram divided by 2)</strong>: This system is derived from the audiogram divided by 2 in the log domain of the auditory model.</li>
-    <li><strong>HLC (audiogram without division) </strong>: This system uses the full audiogram without division in the log domain.</li>
-    <li><strong>NR_NAL_R</strong>: This system applies Noise Reduction followed by NAL-R (National Acoustic Laboratories—Revised) filtering.</li>
-    <li><strong>HLC-NR (audiogram divided by 2)</strong>: This system applies the audiogram divided by 2 in the log domain along with Noise Reduction.</li>
+    <li><strong>HLC (audiogram divided by 2)</strong>: This system is derived from the audiogram divided by 2 in the log domain. Optimized on the auditory-nerve output of the Zilany model.</li>
+    <li><strong>HLC (audiogram without division) </strong>: This system uses the full audiogram without division in the log domain.  Optimized on the auditory-nerve output of the Zilany model.</li>
+    <li><strong>NR_NAL_R</strong>: This system applies noise reduction followed by NAL-R filtering.</li>
+    <li><strong>HLC-NR (audiogram divided by 2)</strong>: This system performs joint HLC and NR and is derived from the the audiogram divided by 2 in the log domain. Optimized on the auditory-nerve output of the Zilany model. </li>
     <li><strong>DNN-HA</strong>: Deep Neural Network Hearing Aid system. More details available at <a href="https://github.com/fotisdr/DNN-HA">DNN-HA GitHub</a>.</li>
     <li><strong>HLC (IC, audiogram divided by 2)</strong>: Similar to the audiogram divided by 2 system, but appended with Inferior Colliculus (IC) modeling.</li>
     <li><strong>HLC (IC, audiogram not divided by 2)</strong>: Similar to the no division, but appended with Inferior Colliculus (IC) modeling.</li>
-    <li><strong>HLC-NR (IC, audiogram divided by 2)</strong>: Noise Reduction system, auditory nerve model appended with Inferior Colliculus (IC) modeling. Uses Wave-U-Net (WUN).</li>
+    <li><strong>HLC-NR (IC, audiogram divided by 2)</strong>: Similar to the HLC-NR, auditory nerve model appended with Inferior Colliculus (IC) modeling. IImportantly, this system uses Wave-U-Net (WUN).</li>
   </ul>
 
   <h2>Audio Examples by SNR</h2>
